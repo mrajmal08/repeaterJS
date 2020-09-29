@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Repeater</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="repeater.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <br/>
+    <br/>
+    <h2 align="center">Repeater</h2>
+    <div class="form-group">
+        <form method="post" action="getData.php" id="formId">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="tableFields">
+                    <tr class="inputDiv">
+                        <td><input type="text" name="data[node][name]" placeholder="Enter your Name"
+                                   class="form-control name_list"/></td>
+                        <td><input type="text" name="data[node][city]" placeholder="Enter your City"
+                                   class="form-control city_list"/></td>
+                        <td>
+                            <button type="button" name="addFields" id="add" class="btn btn-success">Add More</button>
+                        </td>
+                    </tr>
+                </table>
+                <!--                <td><input type="hidden" name="data[]" id="dataValues"/></td>-->
+            </div>
+            <button type="submit" id="submit" class="btn btn-info">Submit</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+
